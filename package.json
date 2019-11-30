@@ -1,23 +1,22 @@
 {
-  "name": "express",
+  "name": "coolnodeapp",
   "version": "1.0.0",
+  "description": "node app ",
   "main": "index.js",
   "dependencies": {
     "express": "^4.17.1"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "start": "node index.js"
+},
+  "repository": {
+  "type": "git",
+  "url": ""
+},
   "author": "",
   "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shrikantpadhy18/myweb.git"
-  },
   "bugs": {
-    "url": "https://github.com/shrikantpadhy18/myweb/issues"
-  },
-  "homepage": "https://github.com/shrikantpadhy18/myweb#readme",
-  "description": ""
+  "url": ""
+},
+  "homepage": ""
 }
