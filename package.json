@@ -1,5 +1,5 @@
 {
-  "name": "express",
+  "name": "myweb",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,8 +10,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index",
-    "serve": "node index"
+    
   },
   "author": "",
   "license": "ISC"
