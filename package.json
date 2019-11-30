@@ -1,17 +1,24 @@
 {
-  "name": "myweb",
+  "name": "express",
   "version": "1.0.0",
-  "description": "",
+  "description": "\\\personal website\\\",
   "main": "index.js",
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^3.1.0"
+    "handlebars": "^4.5.3"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shrikantpadhy18/myweb.git"
+  },
+  "author": "shrikantpadhy18",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shrikantpadhy18/myweb/issues"
+  },
+  "homepage": "https://github.com/shrikantpadhy18/myweb#readme"
 }
