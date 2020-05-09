@@ -1,6 +1,6 @@
 'use strict';
-import alert from 'alert-node'
 
+var jsalert=require('js-alert');
 var developerNameDefault="SHRIKANT PADHY";
 var developerCountryDefault="INDIA";
 var express=require('express');
@@ -26,18 +26,7 @@ app.get('/',function(req,res,next)
 );
 
 
-var mongoose = require("mongoose");
-mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost:27017/mycustomer",{ useUnifiedTopology: true , useNewUrlParser: true });
 
-var nameSchema = new mongoose.Schema({
-  Name: String,
-    Email: String,
-    Subject:String,
-    Message:String
-    
-});
-var User = mongoose.model("User", nameSchema);
 
 var bodyParser = require('body-parser');
 app.use(bodyParser.json());
@@ -45,11 +34,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post("/addname", (req, res) => {
   var{Name,Email,Subject,Message}=req.body;
-  var transporter=nodemailer.createTransport({
-    service:'gmail',
-    auth:{
-      user:'prashantpadhy21@gmail.com',
-      pass:'21052003'
+  var transporter= nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: 'prashantpadhy21@gmail.com',
+      pass: '21052003'
     }
   })
   var mailoptions={
@@ -63,9 +52,9 @@ app.post("/addname", (req, res) => {
   
   transporter.sendMail(mailoptions, function(error, info){
     if (error) {
-      alert("Something Gone Wrong.");
+      jsalert.alert("Something Gone Wrong.");
     } else {
-      alert("Email Sent.");
+      jsalert.alert("Email Sent.");
       console.log('Email sent: ' + info.response);
     }
   });
